@@ -63,8 +63,8 @@ useEffect(()=>{
           <input onChange={handleChange}  value={formData['firstname']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type=' text ' name='firstname' placeholder='First name' required></input>
           <input onChange={handleChange}  value={formData['lastname']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type=' text ' name='lastname' placeholder='Last name' required></input>
           <input onChange={handleChange}  value={formData['email']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type=' email ' name='email' placeholder='Email Address' required></input>
-          <input onChange={handleChange}  value={formData['password']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type=' password ' name='password' placeholder='Password' required></input>
-          <input onChange={handleChange}  value={formData['confirmPassword']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type=' password ' name='confirmPassword' placeholder='Confirm Password' required></input>
+          <input onChange={handleChange}  value={formData['password']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type='password' name='password' placeholder='Password' required></input>
+          <input onChange={handleChange}  value={formData['confirmPassword']}  className=' bg-[#f9f9f9] border-none p-2 pl-4 rounded-md outline-none' type='password' name='confirmPassword' placeholder='Confirm Password' required></input>
           {!matchPassword && <p>Password don not Match!</p>}
           <input onChange={handleChange}   type='file' name='profileImage' id='image' accept='image/*'  hidden required></input>
           <label htmlFor='image'>

@@ -5,6 +5,7 @@ const AuthRoute = require('./routes/auth.route')
 const cors = require('cors')
 const app = express()
 dotenv.config()
+// Serve all files inside the public folder directly to the browser.
 app.use(express.static('public'))
 app.use(cors())
 
