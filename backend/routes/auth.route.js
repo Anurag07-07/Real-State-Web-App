@@ -1,5 +1,5 @@
 const express = require('express')
-const { register } = require('../controller/auth.controller')
+const { register, login } = require('../controller/auth.controller')
 const router = express.Router()
 const multer = require('multer')
 
@@ -15,5 +15,6 @@ const storage = multer.diskStorage({
 const upload = multer({storage})
 
 router.post('/register',upload.single('profileImage'),register)
+router.post('/login',login)
 
 module.exports = router
